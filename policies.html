@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ACP | Policies</title>
+
+    <!-- Code for the favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#1a237e">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#1a237e">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS for Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Stylesheet Importing -->
+    <link rel="stylesheet" href="HTML_Resources/style.css">
+
+    <!-- Style for the flexbox -->
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+
+
+    <style>
+        main {
+            background-image: url("images/capitol-2.jpg");
+            /* Image Credit: David Maiolo (https://commons.wikimedia.org/wiki/File:United_States_Capitol_Dome_and_Flag.jpg), „United States Capitol Dome and Flag“, Resized by Joshua Kimsey, https://creativecommons.org/licenses/by-sa/3.0/legalcode */
+            background-attachment: fixed;
+            background-position: center;
+            background-color: rgba(255, 255, 255, .5);
+            background-blend-mode: overlay;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a.active {
+            padding-right: 20px;
+        }
+
+        nav,
+        nav-content,
+        ul.tabs {
+            background-color: #173f71
+        }
+
+        li>a {
+            color: white !important;
+
+        }
+
+        li>a.active {
+            color: #ffa000 !important;
+            border-left-color: #ffa000 !important;
+        }
+
+        li.indicator {
+            background-color: #ffa000 !important;
+        }
+
+        .sticky {
+            position: sticky !important;
+            position: -webkit-sticky !important;
+            top: 60px;
+        }
+
+        i.material-icons {
+            font-size: 20px !important;
+        }
+
+        .sticky a:active {
+            border-left-color: #ffa000 !important;
+        }
+
+        .sticky a:hover {
+            border-left: none !important;
+            border-bottom: 1px solid #ffa000 !important;
+            color: #ffa000 !important;
+            height: 100%;
+        }
+
+        svg {
+            margin-bottom: -5px;
+        }
+
+        svg path {
+            fill: white;
+        }
+
+        a:hover>svg path {
+            fill: #ffa000;
+        }
+
+        ul#mobile-demo>li>a{
+            color: #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <div class="row">
+            <div class="col s12">
+                <div id="title" class="card-panel  ">
+                    <div class="section center-align">
+                        <h1 class="header">The Policies</h1>
+                        <h4 class="header">of the American Capitalist Party</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tablet and Up Display -->
+        <div class="container hide-on-small-only ">
+            <div class="row">
+                <div class="col s12 m11">
+
+                    <!-- Introduction -->
+                    <div id="econ" class="card-panel  scrollspy">
+                        <div class="section">
+                            <h3 class="header">UPHOLDING INDIVIDUAL RIGHTS IN THE ECONOMY</h1>
+                        </div>
+                        <div class="divider"></div>
+                        <div id="eco" class=" sticky ">
+                            <nav class="sticky">
+                                <div class="nav-wrapper">
+                                    <div class="col s12">
+                                        <ul class="nav-mobile">
+                                            <li class="tab">
+                                                <a href="#stateEconomy">
+                                                    <i class="material-icons">monetization_on</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a class="" href="#energy">
+                                                    <i class="material-icons">lightbulb_outline</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#climate">
+                                                    <i class="material-icons">cloud_queue</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#labor">
+                                                    <i class="material-icons">settings</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#welfare">
+                                                    <i class="material-icons">pan_tool</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#socialSecurity">
+                                                    <i class="material-icons">accessible</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#education">
+                                                    <i class="material-icons">school</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#medical">
+                                                    <i class="material-icons">local_hospital</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#immigration">
+                                                    <i class="material-icons">public</i>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#funding">
+                                                    <i class="material-icons">account_balance</i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <h4 id="" class="header">The Separation Of State & Economy</h3>
+                            <p id="stateEconomy" class="flow-text">
+                                There should exist a strict legal separation of state and economy in the United States, just as, and for the same reason,
+                                there exists a legal separation of state and church. Just as religious belief and practice
+                                is—properly—a matter of private choice and initiative, so are men's economic choices and
+                                activities. As long as individuals are not criminals—i.e., as long as they do not initiate
+                                force or fraud against innocent victims—their right to their own beliefs, their own choices,
+                                and their own activities, material as well as spiritual, must be upheld and protected by
+                                the legal system. The first clause of the First Amendment to the U.S. Constitution states,
+                                <br>
+
+                                <span class="quote">"Congress shall make no law respecting an establishment of religion, or prohibiting the free
+                                    exercise thereof…"</span>
+                                <br>
+                                <br> We full-mindedly and wholeheartedly agree. Similarly, we support a Constitutional amendment
+                                stating,
+                                <br>
+
+                                <span class="quote">"Congress shall make no law respecting the establishment of economic regulations, or restricting
+                                    the free exercise of voluntary production and trade."</span>
+                                <br>
+                                <br> If business persons, like religious persons or clergy, initiate force or fraud, they should
+                                be properly prosecuted under the laws of the criminal justice system. But if they initiate
+                                neither force nor fraud, then the government must be constitutionally debarred from interfering
+                                with their activities. Two centuries of capitalism and millennia of statism demonstrate two
+                                practical conclusions: When men's rights are protected to freely engage in production and
+                                trade, immense advances result in innovations, in creation of both material and intellectual
+                                wealth, in living standards, and in human life expectancies—but when men's rights to voluntarily
+                                produce and trade are curtailed by government, when statism in any form is rampant, then
+                                progress ceases, the creation of wealth plummets, living standards diminish, and life expectancies
+                                decline.
+                            </p>
+
+                            <div class="divider"></div>
+                            <h4 id="" class="header ">A Rational Energy Policy</h4>
+                            <p id="energy" class="flow-text">
+                                We support the full freedom of U.S. energy producers to develop natural resources on the land they own or purchase from landowners
+                                that voluntarily sell to them.
+                                <br>
+                                <br> We support an immediate abolition of all environmentalist legislation that restricts the
+                                right of U.S. companies to produce energy, and the establishment of a free market in energy.
+                                <br>
+                                <br> Such a free market involves eliminating all subsidies to both fossil fuel companies and
+                                "alternative" or "green/renewable" energy companies, and a definitive end to government incentives
+                                or penalties applied to the economic activity of any and all types of energy producers. We
+                                confidently maintain that a free market in energy, similar to a free market in computer technology,
+                                will attract brilliant minds dedicated to meeting mankind's energy needs across all technologies—and
+                                that to do so effectively, government must be legally restricted from any and all forms of
+                                interference. Such policies will ensure an America wealthy in inexpensive sources of energy,
+                                and will make the United States again a world leader in energy production.
+                            </p>
+
+                            <div class="divider"></div>
+                            <h4 class="header ">Enviromentalism & Climate Change</h4>
+                            <p id="climate" class="flow-text">
+                                We support a clean environment as a means to the end of flourishing human life—not as an end in itself.
+                                <br>
+                                <br> Human beings—not swamps, wastelands, caribou, rats, or mosquitoes—hold supreme moral value.
+                                We hold that what is morally right and proper is for human beings to develop and cultivate
+                                the earth's resources in service of human life.
+                                <br>
+                                <br> The human environment is kept clean and safe primarily by advances in science, technology,
+                                and industrialization.
+                                <br>
+                                <br> For example: development of steel and concrete enables construction of reservoirs, water
+                                mains, indoor plumbing, and sewer mains that keep sewage out of the drinking water; advanced
+                                technology enables men to drain swamps that are breeding grounds for malaria-carrying mosquitoes;
+                                heating and central air conditioning permit human beings to live comfortably in extreme climate
+                                conditions, without breathing smoke from indoor fires; and so forth. Related, the protection
+                                of private property rights is essential to effectively resolving legitimate cases of pollution.
+                                If an individual dirties and limits the damage to his own property, that is his affair and
+                                none of the government's. But if he pollutes somebody else's property, a claim against him
+                                in civil court by one whose property he damaged must be upheld; a polluter must be held legally
+                                responsible for remediating any property damage he incurred. Additionally, the upholding
+                                of property rights enables environmentalist organizations, or others, to raise money and
+                                purchase large wilderness tracts, to be kept forever wild, unused for human economic development.
+                                <br>
+                                <br> Regarding climate change, the earth is roughly 4.65 billion years old, possessing therefore
+                                a vast history in which climate change occurs naturally and ceaselessly. For example, millions
+                                of years ago, long before human beings existed, much less industrialized, huge naturally-driven
+                                temperature swings—significantly larger than the 1.5 degree Fahrenheit rise of the past 150
+                                years—caused the onset and, in time, the cessation of ice ages. We recognize that the best
+                                opportunity for human life to flourish during such periods of severe cooling or warming is
+                                provided by electric power, indoor heat, thermal clothing, advances in medical science, air
+                                conditioning, sun screen, and the like—all products of applied science, technology, and industrialization.
+                                Whether or not human industrial activity contributed to the slight warming of the past 150
+                                years, two truths are certain: This mild warming, despite decades of alarmism, poses no immediate
+                                catastrophic threat to human life—and government's restricting of the economic activity required
+                                to attain flourishing life across all climates, is the exact opposite of a proper course
+                                of action. Only a free society and a free market, upholding individual rights and freedom
+                                of the mind, enables the advances in science, technology, and industrialization necessary
+                                to protect human life from all of nature's dangers, including ice ages and other forms of
+                                extreme (or mild) climate change, germs and disease, earthquakes, volcanoes, hurricanes,
+                                tsunamis, and the like.
+                            </p>
+
+                            <div class="divider"></div>
+                            <h4 class="header">Labor Markets & Job Creation</h4>
+                            <p id="labor" class="flow-text  ">
+                                The primary purpose of an economy is to create wealth—goods and services—which benefits human beings at all socio-economic
+                                levels.
+                                <br>
+                                <br> In a free society dedicated to production, full employment of all who voluntarily seek work
+                                is a vital means to this end. It is gained by legally debarring government from interfering
+                                in the labor markets. The right of employers and workers—non-union and union alike—to negotiate
+                                freely and voluntarily, must be respected and protected by law. Just as we respect the right
+                                of two men to form a marital contract, free from government interference, so we respect their
+                                right to form an employment contract, similarly free from government interference. Government
+                                interference in the labor markets, by either setting minimum wage laws or forcing employers
+                                to negotiate exclusively with unions, results in wages set at levels higher than some people's
+                                labor is worth to employers. In truth, it is impossible to make a man worth a specific salary
+                                by legally prohibiting anyone from offering him a lesser amount. The result is, always and
+                                everywhere, unemployment. Instead, we unequivocally support the right of employers to offer
+                                wages that, in their judgment, reflect the productive ability of potential employees—and
+                                the right of workers to voluntarily accept or decline the wages offered, or to negotiate
+                                for salaries higher.
+                                <br>
+                                <br> Such a policy will encourage full employment and ensure that those new to the job market
+                                and/or relatively unskilled can find employment and thereby earn money, gain experience,
+                                demonstrate a diligent work ethic, build a resume, receive valuable on-the-job training,
+                                and experience the pride of being self-supporting.
+                            </p>
+
+                            <div class="divider"></div>
+                            <h4 class="header ">The Welfare State</h4>
+                            <p id="welfare" class="flow-text  ">
+                                We support full privatization of the charity industry.
+                                <br>
+                                <br> Aiding innocent human beings in need is a worthy endeavor if individuals help because they
+                                want to, not because they have to, and if they do so privately, voluntarily, and non-coercively.
+                                <br>
+                                <br> The government has no moral right to coercively re-distribute income, meaning, no right
+                                to seize the wealth of innocent, productive individuals to provide unearned material benefits
+                                to those who did not create them—and it must be stripped of all legal authority to do so.
+                                The energy with which the welfare state is upheld by many moralists, teachers, politicians,
+                                welfare department bureaucrats, and millions of voters supporting it, can be re-directed—properly—to
+                                found, fund, and/or join private charity organizations that voluntarily and non-coercively
+                                help innocent persons in need.
+                            </p>
+                            <div class="divider"></div>
+                            <h4 class="header">Social Security</h4>
+                            <p id="socialSecurity" class="flow-text  ">
+                                The right of working individuals to retain their full earnings—and to dispose of their income as they choose—must be unequivocally
+                                protected by the government of a free society.
+                                <br>
+                                <br> In practical terms, individuals know—far better than does the government—what is best for
+                                them and for the disposal of their wealth. Indeed, most honest working persons are—fiscally—vastly
+                                more responsible than is the government. The right of private individuals to choose between
+                                spending and saving, between higher living standards during working years and increased resources
+                                for retirement, must be upheld by law. To this end,
+                                <span class="quote">We support a full phasing out of the Social Security system</span>, paying back to workers
+                                the full monies already collected from them, and immediately discontinuing any further withholding
+                                of workers' wages, with a result that individual retirement accounts are fully on a voluntary,
+                                private basis.
+                            </p>
+                            <div class="divider"></div>
+                            <h4 class="header ">Education</h4>
+                            <p id="education" class="flow-text  ">
+                                We support a full, comprehensive, definitive, and universal abolition—now and forever, by inalterable Constitutional amendment—of
+                                the government school system.
+                                <br>
+                                <br> All education, with no exception, in a free country must be privately done. We recognize
+                                that government schools have no economic incentive to excel—that students are compelled to
+                                attend, and that taxpayers are coerced to supply funding.
+                                <br>
+                                <br> Government schools, by the initiation of force, receive both students and money regardless
+                                whether their educational product is effective or poor, often receiving increased funding
+                                because their product is poor. Most Americans recognize that private schools are cognitively
+                                superior to government schools but, taxed to support the failed government institutions,
+                                are unable to pay twice for their children's education. With the abolition of the government
+                                schools must come the repeal of the income and property taxes that finance them, making it
+                                possible for hundreds of millions of Americans to now afford quality private education. Moreover,
+                                a marketplace fully open to competition, teems with diverse options; for example, the American
+                                restaurant industry offers a wide array of choices—from dozens of popular fast food chains
+                                to diners, sandwich shops, family restaurants, ethnic restaurants, and all variations up
+                                to and including tony establishments offering five star cuisine. (And American supermarkets
+                                are a cornucopia of diverse foodstuffs to be purchased and prepared at home.) Similarly,
+                                when the monolithic government school system is abolished and education is privatized, a
+                                vast array of options will emerge to meet parental demand: More children will be homeschooled;
+                                tutors will offer academic services in a wealth of subjects; teachers will open tiny individualized
+                                schools; education corporations will be founded and open large-scale school systems across
+                                the country; and on-line education will proliferate. There will be religious schools and
+                                secular schools, academic programs and vocational schools, big-name prep schools and no-name
+                                start-up schools, day schools and after-work night schools and weekend programs, thousands
+                                upon thousands of options from among which adults—and parents and their children—will choose.
+                                <br>
+                                <br> By taking schooling out of the government's hands and placing it where it belongs—in the
+                                hands of parents—we respect the right of individuals to choose the school they want for themselves
+                                and their children, we definitively terminate governmental initiation of force in the educational
+                                field, contributing to freedom of the mind, and we vastly improve the educational levels
+                                in this country. We remember that prior to the imposition of government schooling in the
+                                mid-19th century, private education in America was widespread and outstanding; that, for
+                                example, Thomas Paine's Common Sense sold 120,000 copies to a free population of roughly
+                                2.4 million, that the essays of The Federalist were written largely as newspaper editorials
+                                to be read by the common man, and that, in the early 19th century, Walter Scott's novels
+                                sold five million copies, the equivalent today of selling sixty million. A free market of
+                                education has, and will again, deliver superlative levels of literacy in this nation.
+                            </p>
+                            <div class="divider"></div>
+                            <h4 class="header ">Medical Care</h4>
+                            <p id="medical" class="flow-text  ">
+                                We support a swift and full repeal of the Affordable Health Care Act (Obamacare), an establishment of a free market in medicine,
+                                and a strict legal separation of state and sick bed.
+                                <br>
+                                <br> Medical decisions will be made by patients in concert with their physicians, with government
+                                at all levels utterly excluded by law. Medical payments will be made by patients, by their
+                                private health insurance companies, and/or by voluntary charity organizations established
+                                to help poor persons with medical costs, again with government legally excluded. We understand
+                                that American health care, by physicians around the globe, is acknowledged as the world's
+                                finest. As but one example, vastly more English, French, and German men die of prostate cancer
+                                than do American men. But American medical care has become prodigiously expensive. At the
+                                same time, not coincidentally, we recognize that the United States is no longer a capitalist
+                                system, and has not been so for at least as far back as FDR's New Deal in the 1930s.
+                                <br>
+                                <br> It must be understood that the United States is, and has long been, a mixed economy—an unstable
+                                amalgam of capitalism and socialism, of freedom and government controls, of individual rights
+                                and statism.
+                                <br>
+                                <br> The two questions, in logic, are: Which part of the mixture is responsible for the superb
+                                medical care? And which part of the amalgam is responsible for the skyrocketing cost?
+                                <br>
+                                <br> We recognize that, in any field, intellectual advance is wrought by free-thinking minds
+                                operating under conditions of political-economic liberty; this is as true of MRI machines,
+                                CT scans, arthroscopic surgery, illness-curing pharmaceuticals, and advanced cancer treatment
+                                as it is of superlative novels, beautiful musical compositions, breakthroughs in theoretical
+                                science, and such pioneering technologies as airplanes, automobiles, the electric light,
+                                personal computers, and the Internet. It is the capitalist element of America's mixed economy—not
+                                the socialist element—that is responsible for the country's superlative medical care.
+                                <br>
+                                <br> Conversely, we maintain that a third-party payer system, backed and enabled by government
+                                intervention in the healthcare field, has immensely boosted demand for medical services without
+                                generating a corresponding increase in supply. Prices then precipitously escalate. It is
+                                the socialist element of America's mixed economy that is responsible for the skyrocketing
+                                cost of American medical care.
+                                <br>
+                                <br> As but a first step to reduce government medical intervention, third party payers, and astronomic
+                                healthcare cost,
+                                <span class="quote">We support a gradual but full phasing out of Medicare and Medicaid</span>, over a period
+                                of several years, giving responsible individuals sufficient time to make alternative arrangements
+                                to pay medical costs, and for private medical charity organizations to form.
+                                <br>
+                                <br> We hold that the mind's unrestricted liberation in a free medical marketplace will enable
+                                the next wave of bio-medical advances, including ever more effective pharmaceuticals, pioneering
+                                surgical techniques, disease-detecting technology, as well as other life-saving developments.
+                                We further maintain that a free medical marketplace, by upholding the responsibility of individuals
+                                for their own medical expenses, and eliminating an economically disastrous third-party payer
+                                system, will immensely reduce demand for medical services, thereby immensely reducing prices,
+                                making quality medical care once again affordable for the overwhelming preponderance of U.S.
+                                citizens.
+                            </p>
+                            <div class="divider"></div>
+                            <h4 class="header ">Immigration</h4>
+                            <p id="immigration" class="flow-text  ">
+                                We uphold this conviction: Open borders for honest immigrants is an application of the principle of individual rights to
+                                those foreign born.
+                                <br>
+                                <br> Consequently, we support open borders for all honest men and women. We maintain that honest
+                                individuals have the moral right to choose their country of residence, that the government
+                                of a free society must uphold and protect that right, and that, in practical terms, the United
+                                States throughout its history has greatly benefited from immigration. Andrew Carnegie, Ayn
+                                Rand, Albert Einstein, Jerry Yang (co-founder of Yahoo), Sergey Brin (co-founder of Google),
+                                Elon Musk (Founder of SpaceX and co-founder of Tesla Motors), Peter Thiel (co-founder of
+                                PayPal), and numerous other geniuses and/or productive giants were and are immigrants to
+                                America; Silicon Valley, for example, is heavily populated with expert, foreign-born engineers.
+                                Related, labor force participation rates show that low-skilled immigrant laborers are and
+                                have long been among American society's hardest workers. To those who argue that immigrants
+                                freeload off of the welfare system, our response is dual: Factually, the welfare state is—overwhelmingly—a
+                                problem of native-born Americans, not of immigrants, who generally manifest a superlative
+                                work ethic; second, the welfare state must be utterly abolished on purely moral and humanitarian
+                                grounds regardless of America's immigration policy.
+                                <br>
+                                <br> Eliminating the welfare state will ensure even further that only those willing to work productively
+                                will immigrate to America.
+                                <br>
+                                <br> Expensive background checks to ensure the debarring of jihadists, criminals, and persons
+                                bearing communicable diseases are, economically, more than offset by immense productivity
+                                gained by welcoming such hard-working immigrants.
+                            </p>
+                            <div class="divider"></div>
+                            <h4 class="header ">Government Financing In A Free Society</h4>
+                            <p id="funding" class="flow-text  ">
+                                We recognize that all honest Americans benefit from legitimate government functions—the civil courts, the criminal justice
+                                system, and a volunteer military.
+                                <br>
+                                <br> Consequently, it is morally just and proper that we pay a fee for governmental services
+                                rendered.
+                                <br>
+                                <br> Freedom does not mean the moral right to freeload off of legitimate government services
+                                paid for by others.
+                                <br>
+                                <br> Consequently, government—like any other service provider—has a right to demand and collect
+                                fees for its necessary services, fees which can be referred to as proper taxation. Related:
+                                When government's coercive activities are fully eliminated—when the government no longer
+                                has the legal authority to establish a welfare state, to interfere in the productive activities
+                                of honest individuals, or to violate the rights of innocent men and women in any form—the
+                                cost of funding it is reduced to a fraction of its current amount. The expense of a proper,
+                                rights-protecting government is roughly ten percent of government's current cost, averaging
+                                to less than $2,000.00 per American; in practice, significantly less, because corporations,
+                                pursuing their rational self-interest, needing contracts upheld, would pay relatively more
+                                for their relatively greater use of the court system.
+                                <br>
+                                <br> Invaluable service at minimal cost—this is the reality of government financing in a proper,
+                                rights-upholding society.
+                            </p>
+                    </div>
+
+                    <div id="morality" class="card-panel scrollspy">
+                        <div class="section">
+                            <h2 class="header">UPHOLDING INDIVIDUAL RIGHTS REGARDING PERSONAL MORALITY</h1>
+                        </div>
+                        <div class="divider"></div>
+                        <div id="" class=" sticky ">
+                            <nav class="sticky">
+                                <div class="nav-content">
+                                    <ul class="nav-mobile">
+                                        <li class="tab">
+                                            <a href="#abortion">
+                                                <i class="material-icons">pregnant_woman</i>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="#gayRights">
+                                                <i class="material-icons">favorite</i>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#drugs">
+                                                <i class="material-icons">smoking_rooms</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <h4 class="header ">Abortion</h3>
+                            <p id="abortion" class="flow-text  ">
+                                We fully endorse a woman's right to choose between abortion and motherhood.
+                                <br>
+                                <br> We recognize that a pregnant woman is an individual human being, with the right to her own
+                                life, her own mind, and her own pursuit of happiness, including the right to terminate an
+                                unwanted pregnancy. Conversely, a fetus early in the pregnancy is no more than a biological
+                                dependency within a woman's body, incapable of biologically autonomous life, utterly reliant
+                                upon the mother's life support functions. It is not the first-trimester fetus's unformed
+                                digestive system that digests food for it, but the mother's; not the fetus's lungs which
+                                respirate for it, but the mother's; not the fetus's brain that controls such life-support
+                                activities, but the mother's; and so forth.
+                                <br>
+                                <br> We maintain that a minimal requirement of attaining the status of human personhood is to
+                                be a biological individual—an entity, not a component—and that an early-pregnancy, unformed
+                                fetus, although undoubtedly alive, and potentially a human being, is no more a human life
+                                than is an acorn an oak tree.
+                                <br> We maintain that the capacity for biologically-independent life, the ability to self-generate
+                                one's own life support functions, is a fundamental criterion of bodily individuation and
+                                constitutes a necessary condition for the attainment of human personhood. We recognize that
+                                such biologic viability is not reached until—roughly—the end of the second trimester, and
+                                that this point in development, and in time, forms the proper demarcation between moral permissibility
+                                and impermissibility of abortion.
+                                <br>
+                                <br> A woman is an organically-formed, biological individual—a human being; an undeveloped fetus
+                                is not.
+                                <br>
+                                <br> Consequently, one has an inalienable right to life; the other does not. As a responsible
+                                human individual, an adult, a pregnant woman is as responsible to finance her abortion as
+                                she is to finance her child—or to do so with the voluntary assistance of other private individuals,
+                                including and especially the father, who choose to help. Government at any and all levels,
+                                whether federal or state, must be legally debarred from funding abortion and from coercing
+                                taxpayers to financially support it.
+                            </p>
+                            <div class="divider"></div>
+                            <h4 class="header ">Gay Rights & Marriage</h4>
+                            <p id="gayRights" class="flow-text  ">
+                                The inalienable right of all individuals—regardless of sexual orientation—must be upheld and protected by the legal system
+                                of a free society.
+                                <br>
+                                <br> This includes legal recognition of the right of gay and lesbian individuals to form lifetime
+                                unions. Which sexual actions are performed by consenting adults is no business of other individuals,
+                                of society as a whole, and, above all, of the government. The government has no moral authority
+                                to discriminate between and among individuals based on sexual orientation. Its nature and
+                                function is to protect individual rights regardless if its elected officials or appointed
+                                agents morally approve or disapprove of the individuals they protect.
+                                <br>
+                                <br> At the same time, we recognize that bigots—regardless the irrationality of their beliefs—also
+                                have rights. If a bigot—regarding his home, property, or business—refuses to deal with homosexuals
+                                (or any persons of whom he disapproves, for whatever reason, including the most ignorant,
+                                irrational, or vile), that is part of his or her inalienable right to his own property. An
+                                individual, by virtue of being an ignoramus, does not relinquish his right to the use and
+                                disposal of his property.
+                                <br>
+                                <br> Even irrational persons—as long as they do not initiate force or fraud—have rights.
+                                <br>
+                                <br> We morally demand that the government of a free country protect the rights of all non-criminal
+                                individuals—including those of irrational bigots. Further, we morally commend all rational
+                                men and women to combat ignorant bigots—including those who discriminate against gays—by
+                                means that do not violate the bigots' rights: by education, ethical training, moral condemnation,
+                                social ostracism, and/or economic boycott. We recognize that such means bring truly positive
+                                social changes: a commitment to reason and to the protection of the rights of all individuals—and
+                                to a ban on the initiation of force, including, and especially, by the government.
+                            </p>
+
+                            <div class="divider"></div>
+                            <h4 class="header ">The War On Drugs</h4>
+                            <p id="drugs" class="flow-text  ">
+                                Although we deplore human beings risking—and sometimes losing—their lives by means of toxic drug use, we uphold the inalienable
+                                right of adult citizens in a free society to choose which drugs, if any, they will imbibe.
+                                <br>
+                                <br> Although the choice to use potentially lethal drugs is a self-destructive one, we hold that
+                                an individual's inalienable right to his or her own life includes the right to irrationally
+                                risk it. The government of a free country has no moral authority to dictate to adult individuals
+                                the substances they may or may not be permitted to use.
+                                <br>
+                                <br> Practically, we recognize that the attempt—by making toxic drugs illegal—to prevent Americans
+                                from imbibing such substances is a colossal and colossally expensive failure. Related, Prohibition,
+                                almost a century ago—the war on alcohol—was a similarly abysmal failure. From such examples,
+                                can be drawn a conclusion: It is impossible to prevent procurement of x by criminalizing
+                                the purchase or ownership of x. There is an economic principle involved: If x is in demand—if
+                                people both desire and have the purchasing power to buy x—then money can be made by supplying
+                                it. If x is legal, it is supplied by honest businessmen; if x is illegal, it is supplied
+                                by gangsters. Either way, x is supplied. We maintain that the legal war on drugs is both
+                                a moral abomination and a practical disaster.
+                                <br>
+                                <br> We call for the immediate legalization of all drugs, a policy which will have numerous consequences,
+                                all of them benign. Legalization will protect the right of adult citizens to govern their
+                                lives by their own judgment (regarding an important social issue, it will legally ban governmental
+                                initiation of force against innocent citizens); it will place the drug business in the hands
+                                of honest businessmen; it will strip of enormous profit and consequently of enormous power
+                                the vile gangsters who currently traffic in illicit drugs; it will significantly lower the
+                                homicide rate in this country; it will save the American taxpayers tens of billions of dollars
+                                per year; it will end the persecution (and prosecution) of those whose only "crime" is the
+                                purchase, ownership, or consumption of a banned substance; and it will thereby free up law
+                                enforcement assets to concentrate full-time on the apprehension of violent criminals, jihadists,
+                                and any others that initiate either force or fraud against innocent victims.
+                                <br>
+                                <br> Above all, we hold that terminating the failed legal war on drugs, enables a vastly more
+                                powerful and effective war on drugs.
+                                <br>
+                                <br> For all rational and healthy persons of goodwill, who care about their brothers and sisters,
+                                and who sincerely seek to prevent tragically unnecessary deaths from drug use, the responsibility
+                                is now squarely on our shoulders: By living a clean, healthy, responsible, and joyous life,
+                                we are a beacon for anyone with eyes to see. Walking the walk, we can now effectively talk
+                                the talk: We teach our children, our students, our neighbors, colleagues, family members,
+                                and friends about the myriad values life potentially holds out to them—about education, productive
+                                career, romantic love, children, dear friends, and many others—and about the insanity of
+                                risking all this for a few moments of a drug-induced "high."
+                                <br>
+                                <br> We initiate no force against our fellows but appeal to the best within them—to their reason
+                                and to their love of life.
+                                <br>
+                                <br> We thereby respect their right of choice—we respect their reasoning mind—we appeal to their
+                                better judgment. And by means of such a philosophic-moral-educational war on drugs, we will
+                                save vastly more lives than ever did the failed legal war on drugs.
+                            </p>
+                    </div>
+
+                    <div id="defense" class="card-panel scrollspy ">
+                        <div class="section">
+                            <h2 class="header">UPHOLDING INDIVIDUAL RIGHTS REGARDING ISSUES OF NATIONAL & SELF-DEFENSE</h1>
+                        </div>
+                        <div class="divider"></div>
+                        <div id="" class=" sticky ">
+                            <nav class="sticky">
+                                <div class="nav-content">
+                                    <ul class="nav-mobile">
+                                        <li class="">
+                                            <a href="#defendAmerica" style="width: 65px; z-index: 10000;">
+                                                <img class="svg" src="images/tank.svg">
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="#gunRights" style="width: 65px; z-index: 10000;">
+                                                <img class="svg" style="" src="images/guns.svg">
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <h4 class="header ">Defending America & Americans</h3>
+                            <p id="defendAmerica" class="flow-text  ">
+                                The only proper role of government is to protect individual rights.
+                                <br>
+                                <br> Consequently and in actual practice, it is as necessary for the government of a free country
+                                to protect innocent citizens against foreign aggressors as it is to protect them against
+                                domestic criminals. Terrifyingly, the history of the past century shows no shortage of foreign
+                                aggressors ready and able to assail America and/or murder Americans—among them, National
+                                Socialists (Nazis), Communists, and Islamists.
+                                <br> It is tragically true that, in such a world, the United States—while passionately upholding
+                                individual rights, the non-initiation of force, and peace—must be prepared to effectively
+                                defend itself against those who would initiate force against it.
+                                <br> Therefore, we stand for a strong United States military, and for willingness to use that
+                                military, around the globe if necessary, to defend America, Americans, and the property of
+                                Americans.
+                                <br>
+                                <br> To protect the rights of American citizens, the United States government must pursue a foreign
+                                policy of rational self-interest.
+                                <br>
+                                <br> The government must protect the rights, the lives, and the property of Americans internationally,
+                                and it must protect the right of Americans to trade voluntarily with productive individuals
+                                and companies overseas. The United States should be a good friend and trading partner to
+                                free nations across the globe, an outspoken moral critic of dictators everywhere, and a fearsome
+                                foe to dictatorships that threaten or attack it or its citizens.
+                                <br> In World War II, the United States used its full technologic, industrial, and military might
+                                to utterly destroy the tyrannical regimes that assailed it. This must be the template for
+                                dealing with those enemies that physically threaten or assault America and/or Americans.
+                                <br>
+                                <br> The moral principle that must be made clear to potential assailants is: Leave us in peace—or
+                                be utterly and totally annihilated. You have no other alternative.
+                                <br>
+                                <br> We value freedom, individual rights, the non-initiation of force, and the prosperity and
+                                peace that follow in their train. We neither prize nor seek the horrors of war. But to those
+                                that physically attack America and/or Americans, our response will be war—not a war of nation-building,
+                                not a war calculated to win hearts and minds, but a war of annihilation. Let our enemies
+                                beware.
+                                <br>
+                                <br> We emphasize that military service in a free society must be purely on a voluntary basis;
+                                for to defend a free country, that country must be free.
+                                <br>
+                                <br> There must never again be a military draft—or a draft of any kind, for whatever purpose—in
+                                the United States.
+                            </p>
+                            <div class="divider"></div>
+                            <h4 class="header ">The Right To Bear Arms</h4>
+                            <p id="gunRights" class="flow-text  ">
+                                We fully and firmly support the right of all honest men and women to own weapons.
+                                <br>
+                                <br> Morally, it is the inalienable right of an innocent individual—one who initiates neither
+                                force nor fraud—to own weapons, including guns. Practically, honest persons are then better
+                                equipped to defend themselves against criminal assault. Further, we maintain that there is
+                                an even more important practical reason for honest men and women to own and to know how to
+                                use guns: The ability to defend their rights and lives against a government devolving into
+                                dictatorship. History shows that oppressive regimes, to maintain brutal control over their
+                                subjects, impose stringent gun control laws.
+                                <br>
+                                <br> Not surprisingly, history also shows that disarmed civilians are powerless to protect themselves
+                                against a dictator's murderous atrocities—but that armed civilians, prepared and able to
+                                defend their rights and lives, stand a vastly greater chance of survival.
+                                <br>
+                                <br> Related, a civilian populace, armed and proficient in the use of guns, forms an effective
+                                bulwark against foreign invaders. As but one illustrious example, the American Minutemen—farmers
+                                and shopkeepers, not soldiers—owning and effective in the use of muskets, defeated troops
+                                of the British Empire at Lexington and Concord, thereby catalyzing a successful uprising
+                                for freedom. For reasons both moral and practical, for purposes of effective self-defense
+                                against both criminals and dictators, we fully and firmly support the right of honest men
+                                and women to bear arms.
+                            </p>
+                    </div>
+                    <div id="conclusion" class="card-panel scrollspy ">
+                        <div class="section">
+                            <h2 id="" class="header  ">Conclusion</h1>
+                        </div>
+                        <div class="divider"></div>
+                        <p class="flow-text">
+                            <span class="bold">The Moral is the practical.</span>
+                            <br>
+                            <br> If the United States universally upholds and protects the principle of individual rights, as
+                            it should, it thereby provides safe haven for the greatest of mankind's thinkers, who will flock
+                            to this country—as they once did—from all over the world. The result is that geniuses both native-born
+                            and immigrant will once again transfigure our culture in every conceivable field—as did, historically,
+                            Nathaniel Hawthorne, Mark Twain, Thomas Edison, Alexander Graham Bell, the Wright brothers, George
+                            Washington Carver, Andrew Carnegie, John D. Rockefeller, Maria Montessori, Albert Einstein, Ayn
+                            Rand, Steve Jobs, Elon Musk, and a host of others.
+                            <br>
+                            <br>
+
+                            <span class="bold">Freedom is fundamentally freedom of the mind.</span>
+                            <br>
+                            <br> When an individual's life belongs to him, it follows logically that his mind belongs to him—and
+                            he thinks, speaks, and acts in accordance with his own judgment. Creative geniuses are thereby
+                            liberated to originate new ideas, theories, books, and technologies, whether or not these are
+                            approved by secular or religious authorities. When freedom of the mind is protected by constitutional
+                            law, brilliant thinkers create flourishing civilization.
+                            <br> Conversely, when an individual's life belongs to the state, it follows logically that his mind
+                            belongs to the state—and he thinks, speaks, and acts only in accordance with the state's commands.
+                            <br>
+                            <br>
+
+                            <span class="quote">Geniuses are throttled.
+                                <br> Creativity is quashed.
+                                <br> Progress is halted.
+                                <br> Abundance is curtailed.
+                                <br> Penury is ubiquitous.
+                                <br>
+                                <br>
+                            </span>
+
+                            <span class="bold">The protection of the rights and the minds of all individual citizens</span> was the vision of
+                            America's Founding Fathers. We stand in unequivocal support of that vision. Freedom and flourishing
+                            civilization—or statism and collapse.
+                            <br>
+                            <br>
+
+                            <span class="quote">This is
+                                <u>America's Choice</u>—and it must make the right one now, while there is yet time.</span>
+                        </p>
+                        <sub>
+                            <sub>
+                                    Background Image Credit: <a href="https://commons.wikimedia.org/wiki/User:Dmaiolo">David Maiolo</a>, <a href="https://commons.wikimedia.org/wiki/File:United_States_Capitol_Dome_and_Flag.jpg">United States Capitol Dome and Flag</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>
+                            </sub>
+                        </sub>
+                    </div>
+                </div>
+                <div class="col sticky hide-on-small-only m1">
+                    <div class="">
+                        <ul class="section sticky table-of-contents">
+                            <li>
+                                <a href="#econ">Economics</a>
+                            </li>
+                            <li>
+                                <a href="#morality">Morality</a>
+                            </li>
+                            <li>
+                                <a href="#defense">Defense</a>
+                            </li>
+                            <li>
+                                <a href="#conclusion">Conclusion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Phone Display -->
+        <div class="container hide-on-med-and-up">
+            <div id="economy" class="card-panel  ">
+                <div class="section center-align subheading">
+                    <h3 class="header flow-text bold">UPHOLDING INDIVIDUAL RIGHTS IN THE ECONOMY</h3>
+                </div>
+                <div class="divider"></div>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">monetization_on</i>THE LEGAL SEPARATION OF STATE AND ECONOMY </div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">
+                                There should exist a strict legal separation of state and economy in the United States, just as, and for the same reason,
+                                there exists a legal separation of state and church. Just as religious belief and practice
+                                is—properly—a matter of private choice and initiative, so are men's economic choices and
+                                activities. As long as individuals are not criminals—i.e., as long as they do not initiate
+                                force or fraud against innocent victims—their right to their own beliefs, their own choices,
+                                and their own activities, material as well as spiritual, must be upheld and protected by
+                                the legal system. The first clause of the First Amendment to the U.S. Constitution states,
+                                <br>
+
+                                <span class="quote">"Congress shall make no law respecting an establishment of religion, or prohibiting the free
+                                    exercise thereof…"</span>
+                                <br>
+                                <br> We full-mindedly and wholeheartedly agree. Similarly, we support a Constitutional amendment
+                                stating,
+                                <br>
+
+                                <span class="quote">"Congress shall make no law respecting the establishment of economic regulations, or restricting
+                                    the free exercise of voluntary production and trade."</span>
+                                <br>
+                                <br> If business persons, like religious persons or clergy, initiate force or fraud, they should
+                                be properly prosecuted under the laws of the criminal justice system. But if they initiate
+                                neither force nor fraud, then the government must be constitutionally debarred from interfering
+                                with their activities. Two centuries of capitalism and millennia of statism demonstrate two
+                                practical conclusions: When men's rights are protected to freely engage in production and
+                                trade, immense advances result in innovations, in creation of both material and intellectual
+                                wealth, in living standards, and in human life expectancies—but when men's rights to voluntarily
+                                produce and trade are curtailed by government, when statism in any form is rampant, then
+                                progress ceases, the creation of wealth plummets, living standards diminish, and life expectancies
+                                decline.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">lightbulb_outline</i>A RATIONAL ENERGY POLICY</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We support the full freedom of U.S. energy producers to develop natural resources on the land
+                                they own or purchase from landowners that voluntarily sell to them.
+                                <br>
+                                <br> We support an immediate abolition of all environmentalist legislation that restricts the
+                                right of U.S. companies to produce energy, and the establishment of a free market in energy.
+                                <br>
+                                <br> Such a free market involves eliminating all subsidies to both fossil fuel companies and
+                                "alternative" or "green/renewable" energy companies, and a definitive end to government incentives
+                                or penalties applied to the economic activity of any and all types of energy producers. We
+                                confidently maintain that a free market in energy, similar to a free market in computer technology,
+                                will attract brilliant minds dedicated to meeting mankind's energy needs across all technologies—and
+                                that to do so effectively, government must be legally restricted from any and all forms of
+                                interference. Such policies will ensure an America wealthy in inexpensive sources of energy,
+                                and will make the United States again a world leader in energy production.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">cloud_queue</i>ENVIRONMENTALISM & CLIMATE CHANGE </div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We support a clean environment as a means to the end of flourishing human life—not as an end
+                                in itself.
+                                <br>
+                                <br> Human beings—not swamps, wastelands, caribou, rats, or mosquitoes—hold supreme moral value.
+                                We hold that what is morally right and proper is for human beings to develop and cultivate
+                                the earth's resources in service of human life.
+                                <br>
+                                <br> The human environment is kept clean and safe primarily by advances in science, technology,
+                                and industrialization.
+                                <br>
+                                <br> For example: development of steel and concrete enables construction of reservoirs, water
+                                mains, indoor plumbing, and sewer mains that keep sewage out of the drinking water; advanced
+                                technology enables men to drain swamps that are breeding grounds for malaria-carrying mosquitoes;
+                                heating and central air conditioning permit human beings to live comfortably in extreme climate
+                                conditions, without breathing smoke from indoor fires; and so forth. Related, the protection
+                                of private property rights is essential to effectively resolving legitimate cases of pollution.
+                                If an individual dirties and limits the damage to his own property, that is his affair and
+                                none of the government's. But if he pollutes somebody else's property, a claim against him
+                                in civil court by one whose property he damaged must be upheld; a polluter must be held legally
+                                responsible for remediating any property damage he incurred. Additionally, the upholding
+                                of property rights enables environmentalist organizations, or others, to raise money and
+                                purchase large wilderness tracts, to be kept forever wild, unused for human economic development.
+                                <br>
+                                <br> Regarding climate change, the earth is roughly 4.65 billion years old, possessing therefore
+                                a vast history in which climate change occurs naturally and ceaselessly. For example, millions
+                                of years ago, long before human beings existed, much less industrialized, huge naturally-driven
+                                temperature swings—significantly larger than the 1.5 degree Fahrenheit rise of the past 150
+                                years—caused the onset and, in time, the cessation of ice ages. We recognize that the best
+                                opportunity for human life to flourish during such periods of severe cooling or warming is
+                                provided by electric power, indoor heat, thermal clothing, advances in medical science, air
+                                conditioning, sun screen, and the like—all products of applied science, technology, and industrialization.
+                                Whether or not human industrial activity contributed to the slight warming of the past 150
+                                years, two truths are certain: This mild warming, despite decades of alarmism, poses no immediate
+                                catastrophic threat to human life—and government's restricting of the economic activity required
+                                to attain flourishing life across all climates, is the exact opposite of a proper course
+                                of action. Only a free society and a free market, upholding individual rights and freedom
+                                of the mind, enables the advances in science, technology, and industrialization necessary
+                                to protect human life from all of nature's dangers, including ice ages and other forms of
+                                extreme (or mild) climate change, germs and disease, earthquakes, volcanoes, hurricanes,
+                                tsunamis, and the like. </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">settings</i>LABOR MARKETS & JOB CREATION</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">The primary purpose of an economy is to create wealth—goods and services—which benefits human
+                                beings at all socio-economic levels.
+                                <br>
+                                <br> In a free society dedicated to production, full employment of all who voluntarily seek work
+                                is a vital means to this end. It is gained by legally debarring government from interfering
+                                in the labor markets. The right of employers and workers—non-union and union alike—to negotiate
+                                freely and voluntarily, must be respected and protected by law. Just as we respect the right
+                                of two men to form a marital contract, free from government interference, so we respect their
+                                right to form an employment contract, similarly free from government interference. Government
+                                interference in the labor markets, by either setting minimum wage laws or forcing employers
+                                to negotiate exclusively with unions, results in wages set at levels higher than some people's
+                                labor is worth to employers. In truth, it is impossible to make a man worth a specific salary
+                                by legally prohibiting anyone from offering him a lesser amount. The result is, always and
+                                everywhere, unemployment. Instead, we unequivocally support the right of employers to offer
+                                wages that, in their judgment, reflect the productive ability of potential employees—and
+                                the right of workers to voluntarily accept or decline the wages offered, or to negotiate
+                                for salaries higher.
+                                <br>
+                                <br> Such a policy will encourage full employment and ensure that those new to the job market
+                                and/or relatively unskilled can find employment and thereby earn money, gain experience,
+                                demonstrate a diligent work ethic, build a resume, receive valuable on-the-job training,
+                                and experience the pride of being self-supporting. </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">pan_tool</i>THE WELFARE STATE</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We support full privatization of the charity industry.
+                                <br>
+                                <br> Aiding innocent human beings in need is a worthy endeavor if individuals help because they
+                                want to, not because they have to, and if they do so privately, voluntarily, and non-coercively.
+                                <br>
+                                <br> The government has no moral right to coercively re-distribute income, meaning, no right
+                                to seize the wealth of innocent, productive individuals to provide unearned material benefits
+                                to those who did not create them—and it must be stripped of all legal authority to do so.
+                                The energy with which the welfare state is upheld by many moralists, teachers, politicians,
+                                welfare department bureaucrats, and millions of voters supporting it, can be re-directed—properly—to
+                                found, fund, and/or join private charity organizations that voluntarily and non-coercively
+                                help innocent persons in need. </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">accessible</i>SOCIAL SECURITY</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">The right of working individuals to retain their full earnings—and to dispose of their income
+                                as they choose—must be unequivocally protected by the government of a free society.
+                                <br>
+                                <br> In practical terms, individuals know—far better than does the government—what is best for
+                                them and for the disposal of their wealth. Indeed, most honest working persons are—fiscally—vastly
+                                more responsible than is the government. The right of private individuals to choose between
+                                spending and saving, between higher living standards during working years and increased resources
+                                for retirement, must be upheld by law. To this end,
+                                <span class="bold">We support a full phasing out of the Social Security system</span>, paying back to workers
+                                the full monies already collected from them, and immediately discontinuing any further withholding
+                                of workers' wages, with a result that individual retirement accounts are fully on a voluntary,
+                                private basis.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">school</i>EDUCATION</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We support a full, comprehensive, definitive, and universal abolition—now and forever, by inalterable
+                                Constitutional amendment—of the government school system.
+                                <br>
+                                <br> All education, with no exception, in a free country must be privately done. We recognize
+                                that government schools have no economic incentive to excel—that students are compelled to
+                                attend, and that taxpayers are coerced to supply funding.
+                                <br>
+                                <br> Government schools, by the initiation of force, receive both students and money regardless
+                                whether their educational product is effective or poor, often receiving increased funding
+                                because their product is poor. Most Americans recognize that private schools are cognitively
+                                superior to government schools but, taxed to support the failed government institutions,
+                                are unable to pay twice for their children's education. With the abolition of the government
+                                schools must come the repeal of the income and property taxes that finance them, making it
+                                possible for hundreds of millions of Americans to now afford quality private education. Moreover,
+                                a marketplace fully open to competition, teems with diverse options; for example, the American
+                                restaurant industry offers a wide array of choices—from dozens of popular fast food chains
+                                to diners, sandwich shops, family restaurants, ethnic restaurants, and all variations up
+                                to and including tony establishments offering five star cuisine. (And American supermarkets
+                                are a cornucopia of diverse foodstuffs to be purchased and prepared at home.) Similarly,
+                                when the monolithic government school system is abolished and education is privatized, a
+                                vast array of options will emerge to meet parental demand: More children will be homeschooled;
+                                tutors will offer academic services in a wealth of subjects; teachers will open tiny individualized
+                                schools; education corporations will be founded and open large-scale school systems across
+                                the country; and on-line education will proliferate. There will be religious schools and
+                                secular schools, academic programs and vocational schools, big-name prep schools and no-name
+                                start-up schools, day schools and after-work night schools and weekend programs, thousands
+                                upon thousands of options from among which adults—and parents and their children—will choose.
+                                <br>
+                                <br> By taking schooling out of the government's hands and placing it where it belongs—in the
+                                hands of parents—we respect the right of individuals to choose the school they want for themselves
+                                and their children, we definitively terminate governmental initiation of force in the educational
+                                field, contributing to freedom of the mind, and we vastly improve the educational levels
+                                in this country. We remember that prior to the imposition of government schooling in the
+                                mid-19th century, private education in America was widespread and outstanding; that, for
+                                example, Thomas Paine's Common Sense sold 120,000 copies to a free population of roughly
+                                2.4 million, that the essays of The Federalist were written largely as newspaper editorials
+                                to be read by the common man, and that, in the early 19th century, Walter Scott's novels
+                                sold five million copies, the equivalent today of selling sixty million. A free market of
+                                education has, and will again, deliver superlative levels of literacy in this nation. </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">local_hospital</i>MEDICAL CARE</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We support a swift and full repeal of the Affordable Health Care Act (Obamacare), an establishment
+                                of a free market in medicine, and a strict legal separation of state and sick bed.
+                                <br>
+                                <br> Medical decisions will be made by patients in concert with their physicians, with government
+                                at all levels utterly excluded by law. Medical payments will be made by patients, by their
+                                private health insurance companies, and/or by voluntary charity organizations established
+                                to help poor persons with medical costs, again with government legally excluded. We understand
+                                that American health care, by physicians around the globe, is acknowledged as the world's
+                                finest. As but one example, vastly more English, French, and German men die of prostate cancer
+                                than do American men. But American medical care has become prodigiously expensive. At the
+                                same time, not coincidentally, we recognize that the United States is no longer a capitalist
+                                system, and has not been so for at least as far back as FDR's New Deal in the 1930s.
+                                <br>
+                                <br> It must be understood that the United States is, and has long been, a mixed economy—an unstable
+                                amalgam of capitalism and socialism, of freedom and government controls, of individual rights
+                                and statism.
+                                <br>
+                                <br> The two questions, in logic, are: Which part of the mixture is responsible for the superb
+                                medical care? And which part of the amalgam is responsible for the skyrocketing cost?
+                                <br>
+                                <br> We recognize that, in any field, intellectual advance is wrought by free-thinking minds
+                                operating under conditions of political-economic liberty; this is as true of MRI machines,
+                                CT scans, arthroscopic surgery, illness-curing pharmaceuticals, and advanced cancer treatment
+                                as it is of superlative novels, beautiful musical compositions, breakthroughs in theoretical
+                                science, and such pioneering technologies as airplanes, automobiles, the electric light,
+                                personal computers, and the Internet. It is the capitalist element of America's mixed economy—not
+                                the socialist element—that is responsible for the country's superlative medical care.
+                                <br>
+                                <br> Conversely, we maintain that a third-party payer system, backed and enabled by government
+                                intervention in the healthcare field, has immensely boosted demand for medical services without
+                                generating a corresponding increase in supply. Prices then precipitously escalate. It is
+                                the socialist element of America's mixed economy that is responsible for the skyrocketing
+                                cost of American medical care.
+                                <br>
+                                <br> As but a first step to reduce government medical intervention, third party payers, and astronomic
+                                healthcare cost,
+                                <span class="bold">We support a gradual but full phasing out of Medicare and Medicaid</span>, over a period
+                                of several years, giving responsible individuals sufficient time to make alternative arrangements
+                                to pay medical costs, and for private medical charity organizations to form.
+                                <br>
+                                <br> We hold that the mind's unrestricted liberation in a free medical marketplace will enable
+                                the next wave of bio-medical advances, including ever more effective pharmaceuticals, pioneering
+                                surgical techniques, disease-detecting technology, as well as other life-saving developments.
+                                We further maintain that a free medical marketplace, by upholding the responsibility of individuals
+                                for their own medical expenses, and eliminating an economically disastrous third-party payer
+                                system, will immensely reduce demand for medical services, thereby immensely reducing prices,
+                                making quality medical care once again affordable for the overwhelming preponderance of U.S.
+                                citizens. </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">public</i>IMMIGRATION </div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We uphold this conviction: Open borders for honest immigrants is an application of the principle
+                                of individual rights to those foreign born.
+                                <br>
+                                <br> Consequently, we support open borders for all honest men and women. We maintain that honest
+                                individuals have the moral right to choose their country of residence, that the government
+                                of a free society must uphold and protect that right, and that, in practical terms, the United
+                                States throughout its history has greatly benefited from immigration. Andrew Carnegie, Ayn
+                                Rand, Albert Einstein, Jerry Yang (co-founder of Yahoo), Sergey Brin (co-founder of Google),
+                                and numerous other geniuses and/or productive giants were and are immigrants to America;
+                                Silicon Valley, for example, is heavily populated with expert, foreign-born engineers. Related,
+                                labor force participation rates show that low-skilled immigrant laborers are and have long
+                                been among American society's hardest workers. To those who argue that immigrants freeload
+                                off of the welfare system, our response is dual: Factually, the welfare state is—overwhelmingly—a
+                                problem of native-born Americans, not of immigrants, who generally manifest a superlative
+                                work ethic; second, the welfare state must be utterly abolished on purely moral and humanitarian
+                                grounds regardless of America's immigration policy.
+                                <br>
+                                <br> Eliminating the welfare state will ensure even further that only those willing to work productively
+                                will immigrate to America.
+                                <br>
+                                <br> Expensive background checks to ensure the debarring of jihadists, criminals, and persons
+                                bearing communicable diseases are, economically, more than offset by immense productivity
+                                gained by welcoming such hard-working immigrants. </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">account_balance</i>GOVERNMENT FINANCING IN A FREE SOCIETY </div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We recognize that all honest Americans benefit from legitimate government functions—the civil
+                                courts, the criminal justice system, and a volunteer military.
+                                <br>
+                                <br> Consequently, it is morally just and proper that we pay a fee for governmental services
+                                rendered.
+                                <br>
+                                <br> Freedom does not mean the moral right to freeload off of legitimate government services
+                                paid for by others.
+                                <br>
+                                <br> Consequently, government—like any other service provider—has a right to demand and collect
+                                fees for its necessary services, fees which can be referred to as proper taxation. Related:
+                                When government's coercive activities are fully eliminated—when the government no longer
+                                has the legal authority to establish a welfare state, to interfere in the productive activities
+                                of honest individuals, or to violate the rights of innocent men and women in any form—the
+                                cost of funding it is reduced to a fraction of its current amount. The expense of a proper,
+                                rights-protecting government is roughly ten percent of government's current cost, averaging
+                                to less than $2,000.00 per American; in practice, significantly less, because corporations,
+                                pursuing their rational self-interest, needing contracts upheld, would pay relatively more
+                                for their relatively greater use of the court system.
+                                <br>
+                                <br> Invaluable service at minimal cost—this is the reality of government financing in a proper,
+                                rights-upholding society.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="economy" class="card-panel  ">
+                <div class="section center-align subheading">
+                    <h3 class="header flow-text bold">UPHOLDING INDIVIDUAL RIGHTS REGARDING PERSONAL MORALITY</h3>
+                </div>
+                <div class="divider"></div>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">pregnant_woman</i>ABORTION</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We fully endorse a woman's right to choose between abortion and motherhood.
+                                <br>
+                                <br> We recognize that a pregnant woman is an individual human being, with the right to her own
+                                life, her own mind, and her own pursuit of happiness, including the right to terminate an
+                                unwanted pregnancy. Conversely, a fetus early in the pregnancy is no more than a biological
+                                dependency within a woman's body, incapable of biologically autonomous life, utterly reliant
+                                upon the mother's life support functions. It is not the first-trimester fetus's unformed
+                                digestive system that digests food for it, but the mother's; not the fetus's lungs which
+                                respirate for it, but the mother's; not the fetus's brain that controls such life-support
+                                activities, but the mother's; and so forth.
+                                <br>
+                                <br> We maintain that a minimal requirement of attaining the status of human personhood is to
+                                be a biological individual—an entity, not a component—and that an early-pregnancy, unformed
+                                fetus, although undoubtedly alive, and potentially a human being, is no more a human life
+                                than is an acorn an oak tree.
+                                <br> We maintain that the capacity for biologically-independent life, the ability to self-generate
+                                one's own life support functions, is a fundamental criterion of bodily individuation and
+                                constitutes a necessary condition for the attainment of human personhood. We recognize that
+                                such biologic viability is not reached until—roughly—the end of the second trimester, and
+                                that this point in development, and in time, forms the proper demarcation between moral permissibility
+                                and impermissibility of abortion.
+                                <br>
+                                <br> A woman is an organically-formed, biological individual—a human being; an undeveloped fetus
+                                is not.
+                                <br>
+                                <br> Consequently, one has an inalienable right to life; the other does not. As a responsible
+                                human individual, an adult, a pregnant woman is as responsible to finance her abortion as
+                                she is to finance her child—or to do so with the voluntary assistance of other private individuals,
+                                including and especially the father, who choose to help. Government at any and all levels,
+                                whether federal or state, must be legally debarred from funding abortion and from coercing
+                                taxpayers to financially support it.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">favorite</i>GAY RIGHTS & MARRIAGE</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">The inalienable right of all individuals—regardless of sexual orientation—must be upheld and
+                                protected by the legal system of a free society.
+                                <br>
+                                <br> This includes legal recognition of the right of gay and lesbian individuals to form lifetime
+                                unions. Which sexual actions are performed by consenting adults is no business of other individuals,
+                                of society as a whole, and, above all, of the government. The government has no moral authority
+                                to discriminate between and among individuals based on sexual orientation. Its nature and
+                                function is to protect individual rights regardless if its elected officials or appointed
+                                agents morally approve or disapprove of the individuals they protect.
+                                <br>
+                                <br> At the same time, we recognize that bigots—regardless the irrationality of their beliefs—also
+                                have rights. If a bigot—regarding his home, property, or business—refuses to deal with homosexuals
+                                (or any persons of whom he disapproves, for whatever reason, including the most ignorant,
+                                irrational, or vile), that is part of his or her inalienable right to his own property. An
+                                individual, by virtue of being an ignoramus, does not relinquish his right to the use and
+                                disposal of his property.
+                                <br>
+                                <br> Even irrational persons—as long as they do not initiate force or fraud—have rights.
+                                <br>
+                                <br> We morally demand that the government of a free country protect the rights of all non-criminal
+                                individuals—including those of irrational bigots. Further, we morally commend all rational
+                                men and women to combat ignorant bigots—including those who discriminate against gays—by
+                                means that do not violate the bigots' rights: by education, ethical training, moral condemnation,
+                                social ostracism, and/or economic boycott. We recognize that such means bring truly positive
+                                social changes: a commitment to reason and to the protection of the rights of all individuals—and
+                                to a ban on the initiation of force, including, and especially, by the government.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">smoking_rooms</i>THE WAR ON DRUGS</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">Although we deplore human beings risking—and sometimes losing—their lives by means of toxic drug
+                                use, we uphold the inalienable right of adult citizens in a free society to choose which
+                                drugs, if any, they will imbibe.
+                                <br>
+                                <br> Although the choice to use potentially lethal drugs is a self-destructive one, we hold that
+                                an individual's inalienable right to his or her own life includes the right to irrationally
+                                risk it. The government of a free country has no moral authority to dictate to adult individuals
+                                the substances they may or may not be permitted to use.
+                                <br>
+                                <br> Practically, we recognize that the attempt—by making toxic drugs illegal—to prevent Americans
+                                from imbibing such substances is a colossal and colossally expensive failure. Related, Prohibition,
+                                almost a century ago—the war on alcohol—was a similarly abysmal failure. From such examples,
+                                can be drawn a conclusion: It is impossible to prevent procurement of x by criminalizing
+                                the purchase or ownership of x. There is an economic principle involved: If x is in demand—if
+                                people both desire and have the purchasing power to buy x—then money can be made by supplying
+                                it. If x is legal, it is supplied by honest businessmen; if x is illegal, it is supplied
+                                by gangsters. Either way, x is supplied. We maintain that the legal war on drugs is both
+                                a moral abomination and a practical disaster.
+                                <br>
+                                <br> We call for the immediate legalization of all drugs, a policy which will have numerous consequences,
+                                all of them benign. Legalization will protect the right of adult citizens to govern their
+                                lives by their own judgment (regarding an important social issue, it will legally ban governmental
+                                initiation of force against innocent citizens); it will place the drug business in the hands
+                                of honest businessmen; it will strip of enormous profit and consequently of enormous power
+                                the vile gangsters who currently traffic in illicit drugs; it will significantly lower the
+                                homicide rate in this country; it will save the American taxpayers tens of billions of dollars
+                                per year; it will end the persecution (and prosecution) of those whose only "crime" is the
+                                purchase, ownership, or consumption of a banned substance; and it will thereby free up law
+                                enforcement assets to concentrate full-time on the apprehension of violent criminals, jihadists,
+                                and any others that initiate either force or fraud against innocent victims.
+                                <br>
+                                <br> Above all, we hold that terminating the failed legal war on drugs, enables a vastly more
+                                powerful and effective war on drugs.
+                                <br>
+                                <br> For all rational and healthy persons of goodwill, who care about their brothers and sisters,
+                                and who sincerely seek to prevent tragically unnecessary deaths from drug use, the responsibility
+                                is now squarely on our shoulders: By living a clean, healthy, responsible, and joyous life,
+                                we are a beacon for anyone with eyes to see. Walking the walk, we can now effectively talk
+                                the talk: We teach our children, our students, our neighbors, colleagues, family members,
+                                and friends about the myriad values life potentially holds out to them—about education, productive
+                                career, romantic love, children, dear friends, and many others—and about the insanity of
+                                risking all this for a few moments of a drug-induced "high."
+                                <br>
+                                <br> We initiate no force against our fellows but appeal to the best within them—to their reason
+                                and to their love of life.
+                                <br>
+                                <br> We thereby respect their right of choice—we respect their reasoning mind—we appeal to their
+                                better judgment. And by means of such a philosophic-moral-educational war on drugs, we will
+                                save vastly more lives than ever did the failed legal war on drugs.
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="economy" class="card-panel  ">
+                <div class="section center-align subheading">
+                    <h3 class="header flow-text bold">UPHOLDING INDIVIDUAL RIGHTS REGARDING ISSUES OF NATIONAL & SELF-DEFENSE</h3>
+                </div>
+                <div class="divider"></div>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <i id="svgIcon">
+                                <object id="svg" data="images/tank.svg" type="image/svg+xml"></object>
+                            </i>DEFENDING AMERICA & AMERICANS</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">The only proper role of government is to protect individual rights.
+                                <br>
+                                <br> Consequently and in actual practice, it is as necessary for the government of a free country
+                                to protect innocent citizens against foreign aggressors as it is to protect them against
+                                domestic criminals. Terrifyingly, the history of the past century shows no shortage of foreign
+                                aggressors ready and able to assail America and/or murder Americans—among them, National
+                                Socialists (Nazis), Communists, and Islamists.
+                                <br> It is tragically true that, in such a world, the United States—while passionately upholding
+                                individual rights, the non-initiation of force, and peace—must be prepared to effectively
+                                defend itself against those who would initiate force against it.
+                                <br> Therefore, we stand for a strong United States military, and for willingness to use that
+                                military, around the globe if necessary, to defend America, Americans, and the property of
+                                Americans.
+                                <br>
+                                <br> To protect the rights of American citizens, the United States government must pursue a foreign
+                                policy of rational self-interest.
+                                <br>
+                                <br> The government must protect the rights, the lives, and the property of Americans internationally,
+                                and it must protect the right of Americans to trade voluntarily with productive individuals
+                                and companies overseas. The United States should be a good friend and trading partner to
+                                free nations across the globe, an outspoken moral critic of dictators everywhere, and a fearsome
+                                foe to dictatorships that threaten or attack it or its citizens.
+                                <br> In World War II, the United States used its full technologic, industrial, and military might
+                                to utterly destroy the tyrannical regimes that assailed it. This must be the template for
+                                dealing with those enemies that physically threaten or assault America and/or Americans.
+                                <br>
+                                <br> The moral principle that must be made clear to potential assailants is: Leave us in peace—or
+                                be utterly and totally annihilated. You have no other alternative.
+                                <br>
+                                <br> We value freedom, individual rights, the non-initiation of force, and the prosperity and
+                                peace that follow in their train. We neither prize nor seek the horrors of war. But to those
+                                that physically attack America and/or Americans, our response will be war—not a war of nation-building,
+                                not a war calculated to win hearts and minds, but a war of annihilation. Let our enemies
+                                beware.
+                                <br>
+                                <br> We emphasize that military service in a free society must be purely on a voluntary basis;
+                                for to defend a free country, that country must be free.
+                                <br>
+                                <br> There must never again be a military draft—or a draft of any kind, for whatever purpose—in
+                                the United States. </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <i id="svgIcon">
+                                <object data="images/guns.svg" type="image/svg+xml"></object>
+                            </i>THE RIGHT TO BEAR ARMS</div>
+                        <div class="collapsible-body">
+                            <span class="flow-text">We fully and firmly support the right of all honest men and women to own weapons.
+                                <br>
+                                <br> Morally, it is the inalienable right of an innocent individual—one who initiates neither
+                                force nor fraud—to own weapons, including guns. Practically, honest persons are then better
+                                equipped to defend themselves against criminal assault. Further, we maintain that there is
+                                an even more important practical reason for honest men and women to own and to know how to
+                                use guns: The ability to defend their rights and lives against a government devolving into
+                                dictatorship. History shows that oppressive regimes, to maintain brutal control over their
+                                subjects, impose stringent gun control laws.
+                                <br>
+                                <br> Not surprisingly, history also shows that disarmed civilians are powerless to protect themselves
+                                against a dictator's murderous atrocities—but that armed civilians, prepared and able to
+                                defend their rights and lives, stand a vastly greater chance of survival.
+                                <br>
+                                <br> Related, a civilian populace, armed and proficient in the use of guns, forms an effective
+                                bulwark against foreign invaders. As but one illustrious example, the American Minutemen—farmers
+                                and shopkeepers, not soldiers—owning and effective in the use of muskets, defeated troops
+                                of the British Empire at Lexington and Concord, thereby catalyzing a successful uprising
+                                for freedom. For reasons both moral and practical, for purposes of effective self-defense
+                                against both criminals and dictators, we fully and firmly support the right of honest men
+                                and women to bear arms.
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div id="preamble" class="card-panel  ">
+                        <div class="section center-align subheading">
+                            <h3 class="header">Conclusion</h3>
+                        </div>
+                        <div class="divider"></div>
+                        <p class="flow-text">
+                            <span class="bold">The Moral is the practical.</span>
+                            <br>
+                            <br> If the United States universally upholds and protects the principle of individual rights, as
+                            it should, it thereby provides safe haven for the greatest of mankind's thinkers, who will flock
+                            to this country—as they once did—from all over the world. The result is that geniuses both native-born
+                            and immigrant will once again transfigure our culture in every conceivable field—as did, historically,
+                            Nathaniel Hawthorne, Mark Twain, Thomas Edison, Alexander Graham Bell, the Wright brothers, George
+                            Washington Carver, Andrew Carnegie, John D. Rockefeller, Maria Montessori, Albert Einstein, Ayn
+                            Rand, Steve Jobs, Elon Musk, and a host of others.
+                            <br>
+                            <br>
+
+                            <span class="bold">Freedom is fundamentally freedom of the mind.</span>
+                            <br>
+                            <br> When an individual's life belongs to him, it follows logically that his mind belongs to him—and
+                            he thinks, speaks, and acts in accordance with his own judgment. Creative geniuses are thereby
+                            liberated to originate new ideas, theories, books, and technologies, whether or not these are
+                            approved by secular or religious authorities. When freedom of the mind is protected by constitutional
+                            law, brilliant thinkers create flourishing civilization.
+                            <br> Conversely, when an individual's life belongs to the state, it follows logically that his mind
+                            belongs to the state—and he thinks, speaks, and acts only in accordance with the state's commands.
+                            <br>
+                            <br>
+
+                            <span class="quote">Geniuses are throttled.
+                                <br> Creativity is quashed.
+                                <br> Progress is halted.
+                                <br> Abundance is curtailed.
+                                <br> Penury is ubiquitous.
+                                <br>
+                                <br>
+                            </span>
+
+                            <span class="bold">The protection of the rights and the minds of all individual citizens</span> was the vision of
+                            America's Founding Fathers. We stand in unequivocal support of that vision. Freedom and flourishing
+                            civilization—or statism and collapse.
+                            <br>
+                            <br>
+
+                            <span class="quote">This is <u>America's Choice</u>—and it must make the right one now, while there is yet time.</span>
+                        </p>
+                        <sub>
+                                <sub>
+                                        Background Image Credit: <a href="https://commons.wikimedia.org/wiki/User:Dmaiolo">David Maiolo</a>, <a href="https://commons.wikimedia.org/wiki/File:United_States_Capitol_Dome_and_Flag.jpg">United States Capitol Dome and Flag</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>
+                                </sub>
+                            </sub>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- JAVASCRIPT CODE -->
+
+    <!-- Minified jQuery v3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- JavaScript & jQuery Code for the page -->
+    <script src="HTML_Resources/main.js" type="text/javascript"></script>
+    <script>
+
+        $(document).ready(function () {
+          $(".button-collapse").sideNav();
+        });
+
+        
+        jQuery('img.svg').each(function () {
+            var $img = jQuery(this);
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            jQuery.get(imgURL, function (data) {
+                // Get the SVG tag, ignore the rest
+                var $svg = jQuery(data).find('svg');
+
+                // Add replaced image's ID to the new SVG
+                if (typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+                // Add replaced image's classes to the new SVG
+                if (typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass + ' replaced-svg');
+                }
+
+                // Remove any invalid XML tags as per http://validator.w3.org
+                $svg = $svg.removeAttr('xmlns:a');
+
+                // Replace image with new SVG
+                $img.replaceWith($svg);
+
+            }, 'xml');
+
+        });
+    </script>
+</body>
+
+</html>

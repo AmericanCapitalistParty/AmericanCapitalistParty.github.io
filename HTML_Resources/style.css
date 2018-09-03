@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
+
+#frontPageImage {
+    background-color: rgba(255, 255, 255, 0.0);
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#frontQuote {
+    background-color: rgba(255, 255, 240, 0.65);
+    margin: 10% -10% 0%;
+}
+
+#frontQuote>span {
+    font-family: serif;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+#frontQuote>h3 {
+    font-family: serif;
+    font-style: italic;
+    font-size: 2.5em;
+}
+
+#preamble {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0% -10%;
+}
+
+#principles {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0% -10%;
+}
+
+#economy {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0% -10%;
+}
+
+#econ, #morality, #defense, #conclusion {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#sidenav-overlay {
+    z-index: 997 !important;
+    display: none;
+}
+
+#title {
+    background-color: rgba(255, 255, 255, .75);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bio_panel {
+    height: 220px;
+}
+
+.active {
+    background-color: #173f71 !important;
+    color: #ffa000 !important;
+}
+
+.collapsible-header {
+    background-color: rgba(255, 255, 255, .5)
+}
+
+.collapsible-body {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.subheading {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+footer {
+    background-color: #173f71;
+}
+
+nav {
+    background-color: #173f71 !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.sticky {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 60px !important;
+}
